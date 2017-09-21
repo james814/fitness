@@ -13,24 +13,291 @@
 </head>
 <body>
 	<header>
-		<button><img width="20" height="20" src="../image/menu.png"></button>
+		<button><img width="35" height="35" src="../image/menu.png"></button>
 		<div class="header">
 			<h1>Fitness</h1><h2>Program</h2>
 		</div>
 	</header>
 	<nav>
-		<div class="li">每週課表</div>
-		<div class="li">胸</div>
-		<div class="li">背</div>
-		<div class="li">肩</div>
-		<div class="li">腿</div>
-		<div class="li">腹</div>
-		<div class="li">二頭</div>
-		<div class="li">三頭</div>
-		<button><img src="../image/left.png"></button>
+		<div class="li" id="schedule">每週課表</div>
+		<div class="li" id="chest">胸</div>
+		<div class="li" id="back">背</div>
+		<div class="li" id="shoulder">肩</div>
+		<div class="li" id="legs">腿</div>
+		<div class="li" id="abdomen">腹</div>
+		<div class="li" id="biceps">二頭</div>
+		<div class="li" id="triceps">三頭</div>
 	</nav>
 	<main>
-		
+		<div class="schedule">
+			<div class="lesson">
+				<h1>Lesson1</h1>
+				<h2>主要肌群:胸<strong>Chest</strong></h2>
+				<ul>
+					<li>2~3種主要動作</li>
+					<li>各1~2種局部動作⤵</li>
+					<li>上胸+下胸+夾胸</li>
+				</ul>
+				<ul class="count">
+					<li>組數:7>4>3</li>
+					<li>組數:5>3</li>
+				</ul>
+				<h2>次要肌群:三頭<strong>Triceps</strong></h2>
+				<ul>
+					<li>2~3種任選</li>
+				</ul>
+				<ul class="count">
+					<li>組數:5>4>3</li>
+				</ul>
+			</div>
+			<div class="lesson">
+				<h1>Lesson2</h1>
+				<h2>主要肌群:腿<strong>Legs</strong></h2>
+				<ul>
+					<li>2~3種主要動作</li>
+					<li>2~3種局部動作</li>
+				</ul>
+				<ul class="count">
+					<li>組數:7>4>3</li>
+					<li>組數:7>4>3</li>
+				</ul>
+				<h2>次要肌群:腹<strong>Abdomen</strong></h2>
+				<ul>
+					<li>2~3種任選</li>
+				</ul>
+				<ul class="count">
+					<li>組數:5>5>3</li>
+				</ul>
+			</div>
+			<div class="lesson">
+				<h1>Lesson3</h1>
+				<h2>主要肌群:肩<strong>Shoulder</strong></h2>
+				<ul>
+					<li>1種主要動作</li>
+					<li>各2種局部動作⤵</li>
+					<li>前三角+三角肌+後三角+斜方</li>
+				</ul>
+				<ul class="count">
+					<li>組數:7</li>
+					<li>組數:3>3</li>
+				</ul>
+				<h2>跑步<strong>Run</strong></h2>
+				<ul>
+					<li>使勁地跑吧</li>
+				</ul>
+				<ul class="count">
+					<li>5km</li>
+				</ul>
+			</div>
+			<div class="lesson">
+				<h1>Lesson4</h1>
+				<h2>主要肌群:背<strong>Back</strong></h2>
+				<ul>
+					<li>2~3種任選</li>
+				</ul>
+				<ul class="count">
+					<li>組數:7>7>4</li>
+				</ul>
+				<h2>次要肌群:二頭<strong>Biceps</strong></h2>
+				<ul>
+					<li>2~3種任選</li>
+				</ul>
+				<ul class="count">
+					<li>組數:5>4>3</li>
+				</ul>
+			</div>
+		</div>
+		<div class="project">
+			<h1>胸<strong>Chest</strong></h1>
+			<h2>主要動作</h2>
+				<h3>臥推</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>槓鈴</li>
+					<li>史密斯</li>
+				</ul>
+			<h2>局部動作</h2>
+				<h3>上胸</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>槓鈴</li>
+					<li>史密斯</li>
+				</ul>
+				<h3>下胸</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>伏地挺身(頭高於腳)</li>
+				</ul>
+				<h3>夾胸</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>機械式蝴蝶機</li>
+					<li>繩索飛鳥</li>
+				</ul>
+		</div>
+		<div class="project">
+			<h1>背<strong>Back</strong></h1>
+			<h2>闊背肌</h2>
+				<h3>往下拉</h3>
+				<ul>
+					<li>機械式橫握滑輪</li>
+					<li>機械式直握滑輪</li>
+				</ul>
+				<h3>往上拉</h3>
+				<ul>
+					<li>引體向上</li>
+					<li>啞鈴</li>
+					<li>槓鈴-直槓</li>
+					<li>槓鈴-橫槓</li>
+					<li>TRX/史密斯</li>
+				</ul>
+				<h3>平拉</h3>
+				<ul>
+					<li>機械式划船</li>
+				</ul>
+			<h2>下背</h2>
+				<h3>硬舉</h3>
+				<ul>
+					<li>壺鈴</li>
+					<li>槓鈴</li>
+					<li>機械式</li>
+				</ul>
+		</div>
+		<div class="project">
+			<h1>肩<strong>Shoulder</strong></h1>
+			<h2>主要動作</h2>
+				<h3>推舉</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>槓鈴</li>
+					<li>史密斯</li>
+				</ul>
+				<h3>旋轉推舉</h3>
+				<ul>
+					<li>啞鈴</li>
+				</ul>
+			<h2>局部動作</h2>
+				<h3>前三角-推舉</h3>
+				<ul>
+					<li>啞鈴</li>
+				</ul>
+				<h3>前三角-前平舉</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>槓片</li>
+					<li>繩索</li>
+				</ul>
+				<h3>三角肌-平舉</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>槓片</li>
+					<li>繩索</li>
+					<li>機械式推舉</li>
+					<li>機械式飛鳥</li>
+				</ul>
+				<h3>後三角</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>機械式蝴蝶機</li>
+					<li>V字繩索</li>
+				</ul>
+		</div>
+		<div class="project">
+			<h1>腿<strong>Legs</strong></h1>
+			<h2>主要動作</h2>
+				<h3>深蹲</h3>
+				<ul>
+					<li>槓鈴</li>
+					<li>史密斯</li>
+				</ul>
+				<h3>單腳深蹲</h3>
+				<ul>
+					<li>訓練炮桶</li>
+					<li>史密斯</li>
+					<li>啞鈴</li>
+				</ul>
+			<h2>局部動作</h2>
+				<h3>大腿前側</h3>
+				<ul>
+					<li>機械式推舉</li>
+					<li>機械式前舉</li>
+				</ul>
+				<h3>大腿後側/臀大肌</h3>
+				<ul>
+					<li>機械式推舉</li>
+					<li>機械式前舉</li>
+				</ul>
+				<h3>小腿</h3>
+				<ul>
+					<li>機械式推舉</li>
+					<li>史密斯</li>
+				</ul>
+		</div>
+		<div class="project">
+			<h1>腹<strong>Abdomen</strong></h1>
+			<h2>馬甲線(腹肌)</h2>
+				<h3>蜷曲</h3>
+				<ul>
+					<li>腳放地板</li>
+					<li>腳抬一半2個90度</li>
+					<li>腳朝天伸直</li>
+				</ul>
+				<h3>瑜珈墊</h3>
+				<ul>
+					<li>雙腳平舉</li>
+				</ul>
+			<h2>人魚線</h2>
+				<h3>蜷曲</h3>
+				<ul>
+					<li>90度左右方向</li>
+				</ul>
+				<h3>瑜珈墊</h3>
+				<ul>
+					<li>雙腳交叉平舉</li>
+				</ul>
+			<h2>鯊魚肌</h2>
+				<h3>蜷曲</h3>
+				<ul>
+					<li>45度方向</li>
+				</ul>
+		</div>
+		<div class="project">
+			<h1>二頭<strong>Biceps</strong></h1>
+			<h2>長二頭</h2>
+				<h3>拳眼朝上</h3>
+				<ul>
+					<li>啞鈴</li>
+				</ul>
+			<h2>短二頭</h2>
+				<h3>拳眼朝左右兩側</h3>
+				<ul>
+					<li>啞鈴</li>
+					<li>W字槓鈴</li>
+					<li>繩索</li>
+					<li>機械式</li>
+				</ul>
+		</div>
+		<div class="project">
+			<h1>三頭<strong>Triceps</strong></h1>
+			<h2>向上推</h2>
+				<h3>啞鈴</h3>
+				<ul>
+					<li>坐姿</li>
+					<li>跪姿</li>
+					<li>站姿</li>
+				</ul>
+				<h3>槓鈴</h3>
+				<ul>
+					<li>躺姿</li>
+				</ul>
+			<h2>向下推</h2>
+				<h3>繩索</h3>
+				<ul>
+					<li>槓</li>
+					<li>環</li>
+					<li>V字</li>
+				</ul>
+		</div>
 	</main>
 </body>
 </html>
