@@ -65,6 +65,9 @@ nav .li:hover{
 	cursor: pointer;
 	background-color: rgba(200, 200, 200,.1);
 }
+nav .li:first-child{
+	display: block;
+}
 main{
 	padding: 200px 90px 70px 90px;
 	position: relative;
@@ -160,9 +163,15 @@ li::before{
 	}
 	nav{
 		z-index: 99999999999;
+		border-radius: 15px;
+		top: 70px;
 	}
 	nav .li{
 		height: 30px;
 		padding: 15px 30px 10px 0;
+		border-radius: 15px;
+	}
+	nav .li:first-child{
+		display: none
 	}
 }

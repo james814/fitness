@@ -13,26 +13,12 @@
 
     <script type="text/javascript">
     	$(function(){
-    		window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
-		        if (window.orientation === 180 || window.orientation === 0) {
-		            // 縱向
-					var controller = 700;
-		    		$("nav").css("bottom", "-700px");
-					$("#menu").click(function(){
-						$("nav").animate({"bottom" : "+=" + controller + "px"}, 700);
-						controller *= -1;
-					});
-		        }
-		        if (window.orientation === 90 || window.orientation === -90 ){
-		            // 橫向
-	    			var controller = 450;
-		    		$("nav").css("bottom", "-450px");
-					$("#menu").click(function(){
-						$("nav").animate({"bottom" : "+=" + controller + "px"}, 700);
-						controller *= -1;
-					});
-		        } 
-		    }, false);
+			var controller = 700;
+    		$("nav").css("bottom", "-700px");
+			$("#menu").click(function(){
+				$("nav").animate({"bottom" : "+=" + controller + "px"}, 700);
+				controller *= -1;
+			});
 			$(".project").hide();
 			$("#schedule").click(function(){
 				$("main").children().hide();
@@ -66,8 +52,6 @@
 				$("main").children().hide();
 				$(".triceps").show();
 			});
-
-			
 		});
     </script>
 </head>
