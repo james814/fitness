@@ -10,7 +10,7 @@ header{
 	top: 0;
 	border-bottom: 1px solid rgb(140, 200, 213);
 	box-shadow: 0 5px 30px rgb(140, 200, 213);
-	background-color: rgb(140, 200, 213);
+	background-color: white;
 	z-index: 9999999;
 }
 .header{
@@ -24,11 +24,11 @@ header{
 	color: rgb(50, 50, 50);
 	margin-right: -8px;
 	display: inline-block;
-	z-index: 999;
+	z-index: 999999999;
 }
 .header h2{
 	display: inline-block;
-	color: white;
+	color: rgb(140, 200, 213);
 	font-size: 80px;
 }
 button{
@@ -134,4 +134,35 @@ li::before{
 	line-height: 2;
 	font-size: 30px;
 	margin-left: 80px;
+}
+@media screen and (orientation: landscape) {
+	header{
+		height: 70px;
+		background-color: white;
+	}
+	.header{
+		line-height: 1;
+		text-align: left;
+		margin: -20px 0 0 30px;
+	}
+	.header h1{
+		color: rgb(50, 50, 50);
+		margin-right: -8px;
+		font-size: 50px;
+		display: inline-block;
+		z-index: 999;
+	}
+	.header h2{
+		display: inline-block;
+		color: white;
+		font-size: 35px;
+		color: rgb(140, 200, 213);
+	}
+	nav{
+		z-index: 99999999999;
+	}
+	nav .li{
+		height: 30px;
+		padding: 15px 30px 10px 0;
+	}
 }
