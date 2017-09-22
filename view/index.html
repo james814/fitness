@@ -13,9 +13,10 @@
 
     <script type="text/javascript">
     	$(function(){
-			var controller = 41;
+			var controller = $(".li").height()*8;
+    		$("nav").css("bottom", "-"+controller+"px");
 			$("#menu").click(function(){
-				$("nav").animate({"bottom" : "+=" + controller + "%"}, 700);
+				$("nav").animate({"bottom" : "+=" + controller + "px"}, 700);
 				controller *= -1;
 			});
 			$(".project").hide();
