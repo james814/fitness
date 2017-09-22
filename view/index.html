@@ -33,21 +33,6 @@
 					});
 		        } 
 		    }, false);
-    		if ($(window).width() < $(window).height()){
-				var controller = 700;
-	    		$("nav").css("bottom", "-700px");
-				$("#menu").click(function(){
-					$("nav").animate({"bottom" : "+=" + controller + "px"}, 700);
-					controller *= -1;
-				});
-    		}else{
-    			var controller = 450;
-	    		$("nav").css("bottom", "-450px");
-				$("#menu").click(function(){
-					$("nav").animate({"bottom" : "+=" + controller + "px"}, 700);
-					controller *= -1;
-				});
-    		}
 			$(".project").hide();
 			$("#schedule").click(function(){
 				$("main").children().hide();
