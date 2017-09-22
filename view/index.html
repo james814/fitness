@@ -10,15 +10,58 @@
     <script src="../resource/react.js"></script>
     <script src="../resource/react-dom.js"></script>
     <script src="../resource/browser.min.js"></script>
+
+    <script type="text/javascript">
+    	$(function(){
+			var controller = 41;
+			$("#menu").click(function(){
+				$("nav").animate({"bottom" : "+=" + controller + "%"}, 700);
+				controller *= -1;
+			});
+			$(".project").hide();
+			$("#schedule").click(function(){
+				$("main").children().hide();
+				$(".schedule").show();
+			});
+			$("#chest").click(function(){
+				$("main").children().hide();
+				$(".chest").show();
+			});
+			$("#back").click(function(){
+				$("main").children().hide();
+				$(".back").show();
+			});
+			$("#shoulder").click(function(){
+				$("main").children().hide();
+				$(".shoulder").show();
+			});
+			$("#legs").click(function(){
+				$("main").children().hide();
+				$(".legs").show();
+			});
+			$("#abdomen").click(function(){
+				$("main").children().hide();
+				$(".abdomen").show();
+			});
+			$("#biceps").click(function(){
+				$("main").children().hide();
+				$(".biceps").show();
+			});
+			$("#triceps").click(function(){
+				$("main").children().hide();
+				$(".triceps").show();
+			});
+		});
+    </script>
 </head>
 <body>
 	<header>
-		<button><img width="35" height="35" src="../image/menu.png"></button>
 		<div class="header">
 			<h1>Fitness</h1><h2>Program</h2>
 		</div>
 	</header>
 	<nav>
+		<div class="li" id="menu"></div>
 		<div class="li" id="schedule">每週課表</div>
 		<div class="li" id="chest">胸</div>
 		<div class="li" id="back">背</div>
@@ -107,7 +150,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="project">
+		<div class="project chest">
 			<h1>胸<strong>Chest</strong></h1>
 			<h2>主要動作</h2>
 				<h3>臥推</h3>
@@ -135,7 +178,7 @@
 					<li>繩索飛鳥</li>
 				</ul>
 		</div>
-		<div class="project">
+		<div class="project back">
 			<h1>背<strong>Back</strong></h1>
 			<h2>闊背肌</h2>
 				<h3>往下拉</h3>
@@ -163,7 +206,7 @@
 					<li>機械式</li>
 				</ul>
 		</div>
-		<div class="project">
+		<div class="project shoulder">
 			<h1>肩<strong>Shoulder</strong></h1>
 			<h2>主要動作</h2>
 				<h3>推舉</h3>
@@ -202,7 +245,7 @@
 					<li>V字繩索</li>
 				</ul>
 		</div>
-		<div class="project">
+		<div class="project legs">
 			<h1>腿<strong>Legs</strong></h1>
 			<h2>主要動作</h2>
 				<h3>深蹲</h3>
@@ -233,7 +276,7 @@
 					<li>史密斯</li>
 				</ul>
 		</div>
-		<div class="project">
+		<div class="project abdomen">
 			<h1>腹<strong>Abdomen</strong></h1>
 			<h2>馬甲線(腹肌)</h2>
 				<h3>蜷曲</h3>
@@ -261,7 +304,7 @@
 					<li>45度方向</li>
 				</ul>
 		</div>
-		<div class="project">
+		<div class="project biceps">
 			<h1>二頭<strong>Biceps</strong></h1>
 			<h2>長二頭</h2>
 				<h3>拳眼朝上</h3>
@@ -277,7 +320,7 @@
 					<li>機械式</li>
 				</ul>
 		</div>
-		<div class="project">
+		<div class="project triceps">
 			<h1>三頭<strong>Triceps</strong></h1>
 			<h2>向上推</h2>
 				<h3>啞鈴</h3>

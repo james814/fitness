@@ -9,7 +9,7 @@ header{
 	position: fixed;
 	top: 0;
 	border-bottom: 1px solid rgb(140, 200, 213);
-	box-shadow: 0 5px 20px rgb(140, 200, 213);
+	box-shadow: 0 5px 30px rgb(140, 200, 213);
 	background-color: white;
 	z-index: 9999999;
 }
@@ -40,59 +40,52 @@ button:focus{
 button:hover{
 	cursor: pointer;
 }
-header button{
-	position: absolute;
-	left: 30px;
-	top: 70px;
-	background-color: white;
-}
 nav{
-	top:100%;
-	bottom: 0;
-	left: 20px;
+	bottom: -41%;
+	right: 50px;
 	width: 185px;
 	position: fixed;
 	background-color: rgb(50, 50, 50);
 	opacity: .7;
 	border-radius: 15px 15px 0 0;
+	z-index: 999999;
 }
 nav .li{
 	height: 50px;
 	border-bottom: 2px solid rgba(200, 200, 200, .1);
 	background-color: rgba(50, 50, 50,.8);
-	text-align: left;
-	padding: 25px 0 10px 30px;
+	text-align: right;
+	padding: 25px 30px 10px 0;
 	font-size: 30px;
 	color: rgb(200, 200, 200);
 }
 nav .li:first-child{
 	border-radius: 15px 15px 0 0;
-	border-top: 2px solid rgba(200, 200, 200, .1);
 }
 nav .li:hover{
 	cursor: pointer;
 	background-color: rgba(200, 200, 200,.1);
 }
 main{
-	padding: 170px 90px 70px 90px;
+	padding: 200px 90px 70px 90px;
 	position: relative;
 }
 .lesson{
-	margin-bottom: 40px;
+	margin-bottom: 100px;
 }
 .schedule h1{
 	margin-left: -20px;
-	font-size: 26px;
-	color: rgb(140, 200, 213);
+	font-size: 40px;
+	color: rgb(70, 130, 143);
 }
 .schedule h2{
-	font-size: 26px;
+	font-size: 60px;
 	font-family: American Typewriter,Arial,"微軟正黑體", "Microsoft JhengHei";
 	line-height: 1.5;
 }
 .schedule h2 strong{
 	position: relative;
-	font-size: 50px;
+	font-size: 100px;
 	color: rgb(140, 200, 213);
 	opacity: .5;
 	top: -3px;
@@ -101,14 +94,14 @@ main{
 .schedule ul{
 	display: inline-block;
 	margin: 0 20px 30px 20px;
-}
-ul{
 	line-height: 2;
+	font-size: 40px;
 }
 li::before{
 	content:"★";
-	margin-right: 5px;
-	font-size: .8em;
+	margin-right: 15px;
+	line-height: 2;
+	font-size: .6em;
 }
 .count{
 	position: absolute;
@@ -118,10 +111,10 @@ li::before{
 }
 .project h1{
 	margin-left: -20px;
-	font-size: 40px;
+	font-size: 70px;
 }
 .project h1 strong{
-	font-size: 70px;
+	font-size: 120px;
 	color: rgb(140, 200, 213);
 	position: relative;
 	opacity: .5;
@@ -134,11 +127,12 @@ li::before{
 	margin: 20px 0 20px 0;
 }
 .project h3{
-	margin: 10px 0 10px 0;
+	margin: 10px 0 10px 40px;
 	line-height: 1.5;
-	font-size: 24px;
-	margin-left: 20px;
+	font-size: 40px;
 }
 .project ul{
-	margin-left: 40px;
+	line-height: 2;
+	font-size: 30px;
+	margin-left: 80px;
 }
